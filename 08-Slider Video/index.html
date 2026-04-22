@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Video</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section >
+        <div class="bannerVideo" id="sliderShow">
+            <video src="./img/video1.mp4" autoplay muted loop class="active" ></video>
+            <video src="./img/video2.mp4" autoplay muted loop></video>
+            <video src="./img/video3.mp4" autoplay muted loop></video>
+            <video src="./img/video4.mp4" autoplay muted loop></video>
+            <video src="./img/128690-742066279_small.mp4" autoplay muted loop></video>
+        </div>
+        <div class="container">
+            <header id="navbar">
+                <a href="#" class="logo">World</a>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span class="menuIcon" onclick="toggleMenu()"></span>
+            </header>
+            <div class="content">
+                <div class="bannerText" id="slideShowText">
+                    <div class="active">
+                        <h2>Tokyo</h2>
+                        <p>Tokio es la vibrante capital de Japón y la metrópoli más poblada del mundo, caracterizada por una fascinante mezcla de tradición milenaria y tecnología futurista. Situada en la bahía de Tokio, destaca por sus barrios temáticos, seguridad, eficiente transporte, y contraste entre rascacielos modernos y templos históricos.</p>
+                    </div>
+                    <div>
+                        <h2>Paris</h2>
+                        <p>París, capital de Francia y conocida como la "Ciudad de la Luz", es un centro global de arte, moda, gastronomía y cultura situado a orillas del río Sena. Destaca por sus monumentos icónicos como la Torre Eiffel, el Museo del Louvre y Notre-Dame, combinando una rica historia con una vibrante vida moderna y urbana.</p>
+                    </div>
+                    <div>
+                        <h2>Egypt</h2>
+                        <p>Egipto, situado en el noreste de África con costas en el Mediterráneo y el Mar Rojo, es una nación transcontinental famosa por su milenaria civilización faraónica, el río Nilo y monumentos icónicos como las pirámides de Giza. Combina historia antigua, desiertos, cultura árabe y un clima cálido, siendo un destino turístico mundialmente reconocido.</p>
+                    </div>
+                    <div>
+                        <h2>Maldives</h2>
+                        <p>Las Maldivas son un archipiélago paradisíaco en el océano Índico, compuesto por unos 26 atolones y casi 1200 islas coralinas, famoso por sus aguas turquesas, arena blanca y exclusivos complejos turísticos (resorts). Es el país más plano del mundo y un destino líder en buceo, ofreciendo una experiencia única de lujo y naturaleza.</p>
+                    </div>
+                        <div>
+                        <h2>Asunción</h2>
+                        <p>Asunción, la capital y ciudad más poblada de Paraguay, es el centro político, económico y cultural del país, fundada el 15 de agosto de 1537, lo que la convierte en una de las más antiguas de Sudamérica. Conocida como la "Madre de Ciudades", mezcla historia colonial con modernidad, arquitectura, vida nocturna y una vibrante gastronomía, situada a orillas del río Paraguay.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <ul class="controls">
+                <li onclick="prevSlider();prevSlideText();"><img src="./img/left.png"></li>
+                 <li onclick="nextSlider();nextSlideText();"><img src="./img/right.png"></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
